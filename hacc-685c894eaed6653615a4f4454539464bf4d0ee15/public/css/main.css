@@ -1,0 +1,202 @@
+body {
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+* {
+    box-sizing: border-box
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #143861;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #463698;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+}
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+            linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+            linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+            linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+            linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 10px 0 0 10px;
+    border-color: #8DCF00;
+}
+progress::-webkit-progress-value {
+    background: #8DCF00;
+}
+
+.vue-treeselect__control {
+    background: transparent !important;
+    border: 2px solid #00D1FF !important;
+    border-radius: 10px !important;
+    padding: 0 15px !important;
+}
+
+.vue-treeselect--has-value .vue-treeselect__multi-value {
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+.vue-treeselect__placeholder {
+    color: #00D1FF !important;
+    display: flex ;
+    align-items: center ;
+    font-size: 12px;
+}
+
+.vue-treeselect__control-arrow {
+    width: 17px !important;
+    height: 15px !important;
+    color: #00D1FF !important;
+}
+
+.vue-treeselect__multi-value-item {
+    color: #00A3FF !important;
+    background: #05568B !important;
+    font-size: 18px !important;
+    line-height: 30px !important;
+}
+
+.vue-treeselect__x {
+    height: 13px !important;
+    color: #00D1FF !important;
+    width: 16px !important;
+}
+
+.vue-treeselect__menu {
+    background: transparent !important;
+    color: #00F0FF;
+    border: 2px solid #00F0FF !important;
+    border-radius: 10px !important;
+    margin-top: 10px !important;
+}
+.vue-treeselect:not(.vue-treeselect--disabled):not(.vue-treeselect--focused) .vue-treeselect__control:hover {
+    background: #5D4EA4 !important;
+}
+.vue-treeselect__multi-value-item.vue-treeselect__multi-value-item-new:hover {
+    background: #5D4EA4 !important;
+}
+.vue-treeselect__value-remove {
+    border: none !important;
+}
+.vue-treeselect__value-remove > svg {
+    width: 15px !important;
+    height: 10px !important;
+}
+
+.vue-treeselect__multi-value-item {
+    padding: 0 5px !important;
+    border-radius: 5px !important;
+}
+
+.vue-treeselect__option:hover {
+    background: #5D4EA4 !important;
+}
+.vue-treeselect__option--highlight {
+    background: #5D4EA4 !important;
+}
+
+.vue-treeselect__checkbox--unchecked {
+    background: transparent !important;
+    border-radius: 3px !important;
+    border: 1px solid #00F0FF !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.vue-treeselect__checkbox--checked {
+    position: relative !important;
+    width: 20px !important;
+    height: 20px !important;
+    background: #00F0FF !important;
+}
+.vue-treeselect__check-mark {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background-image: url("../icons/check.svg") !important;
+}
+
+.vue-treeselect__checkbox--indeterminate {
+    position: relative !important;
+    width: 20px !important;
+    height: 20px !important;
+    background: #00F0FF !important;
+}
+
+.vue-treeselect__minus-mark {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background-image: url("../icons/minus.svg") !important;
+}
+
+.v-data-table.theme--light .v-data-table__wrapper table .v-data-table-header tr th{
+    text-align: start;
+}
+.modal-table.v-data-table.theme--light .v-data-table__wrapper {
+    border: none;
+}
+.modal-table.v-data-table>.v-data-table__wrapper>table {
+    border-spacing: 2px;
+}
+.modal-table.v-data-table.theme--light .v-data-table__wrapper .v-data-table-header {
+    background: #5843BE !important;
+    font-size: 20px;
+}
+.modal-table.v-data-table.theme--light .v-data-table__wrapper table tbody tr {
+    background: #5843BE !important;
+}
+
+.vue-treeselect__single-value {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 20px;
+}
